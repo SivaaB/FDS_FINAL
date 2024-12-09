@@ -53,7 +53,7 @@ def train_models(X, y, model_type='classification'):
 def load_datasets():
     try:
         # Load only breast cancer dataset
-        breast_cancer = pd.read_csv("CSV/breast-cancer.csv")
+        breast_cancer = pd.read_csv("FDS/CSV/breast-cancer.csv")
         
         # Breast Cancer preprocessing
         breast_cancer['diagnosis'] = (breast_cancer['diagnosis'] == 'M').astype(int)
